@@ -113,7 +113,6 @@ sender to commit to remaining payment details in their following step.
 There is no need for this proof type in SRS flow, as the simpler Invoice type suffices.
 
 The witness is a quintuple (s,i,C,Rs',m) where i is the MMR index of an on-chain kernel K with commitment C, satisfying s\*G = R + e\*X, where R is the `receiver_public_nonce`, X is the `receiver_public_excess`, and e is the hash challenge of kernel K.
-and e is the hash challenge of kernel K.
 Additionally, the sender nonce Rs, computed as the difference between kernel nonce and receiver public nonce,
 must be of the form Rs' + H(Rs' | m) \* G, where message m contains the promise fields
   - proof type `0x02`
